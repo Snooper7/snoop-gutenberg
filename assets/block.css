@@ -1,0 +1,30 @@
+.snoop-quote-block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #3C3C3C;
+    border-radius: 24px;
+    padding: 36px;
+    color: #E3E3E3;
+}
+.snoop-qoute-block-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.snoop-qoute-block-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.snoop-qoute-block-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.snoop-qoute-block-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
