@@ -7,6 +7,11 @@
     padding: 36px;
     color: #E3E3E3;
 }
+.snoop-quote-block-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #E3E3E3;
+}
 .snoop-qoute-block-footer {
     display: flex;
     align-items: center;

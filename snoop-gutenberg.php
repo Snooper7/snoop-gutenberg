@@ -24,12 +24,12 @@ defined('ABSPATH') || exit;
 
 add_action( 'enqueue_block_editor_assets', 'snoop_block_assets');
 
-function snoop_block_assets () {
+function snoop_block_assets(){
 
     wp_enqueue_script(
         'snoop-block',
         plugin_dir_url( __FILE__ ) . 'assets/block.js',
-        array('wp-blocks', 'wp-element', 'wp-components'),
+        array('wp-blocks', 'wp-element', 'wp-editor', 'wp-components'),
         filemtime( dirname(__FILE__) . '/assets/block.js')
     );
 
@@ -42,7 +42,7 @@ function snoop_block_assets () {
 
 }
 
-add_action( 'wp_enqueue_script', function(){
+add_action( 'wp_enqueue_scripts', function(){
 
     wp_enqueue_style(
         'snoop-block-css',
